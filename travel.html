@@ -26,13 +26,13 @@
     <script src="./js/burgerButton.js" defer></script>
 
     <style>
-      .heading{
+      .heading {
         text-align: center;
-        font-family: 'Times New Roman';
+        font-family: "Times New Roman";
         font-size: 2rem;
         font-weight: bold;
       }
-      .heading::after{
+      .heading::after {
         content: " ";
         height: 3px;
         width: 150px;
@@ -40,7 +40,7 @@
         display: block;
         margin: auto;
       }
-      .newsheader::after{
+      .newsheader::after {
         content: " ";
         height: 2px;
         width: 90px;
@@ -48,18 +48,19 @@
         display: block;
         margin: left;
       }
-      .readmore{
+      .readmore {
         text-decoration: none;
         color: black;
       }
-      .readmore:hover{
-         font-weight: bold;
+      .readmore:hover {
+        font-weight: bold;
       }
-      .swiper-button-next,.swiper-button-prev{
+      .swiper-button-next,
+      .swiper-button-prev {
         color: #d17;
         font-weight: bold;
       }
-      .article{
+      .article {
         padding: 15rem 3rem 5rem 3rem;
       }
       .article .slide {
@@ -67,188 +68,188 @@
         margin-top: 2rem;
       }
       .article .slide .image {
-          position: relative;
-          overflow: hidden;
-          height: 15rem;
-          width: 100%;
+        position: relative;
+        overflow: hidden;
+        height: 15rem;
+        width: 100%;
       }
       .article .slide .image img {
-          height: 100%;
-          width: 100%;
-          -o-object-fit: cover;
-          object-fit: cover;
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
       }
       .article .slide .content {
-          padding: 1rem;
-          padding-bottom: 0;
+        padding: 1rem;
+        padding-bottom: 0;
       }
       .article .slide .content h3 {
-          font-size: 1.2rem;
-          color: #10221b;
+        font-size: 1.2rem;
+        color: #10221b;
       }
-      .dater{
+      .dater {
         padding-bottom: 1rem;
         padding: 1rem;
       }
-      .dater a{
-          color: black;
+      .dater a {
+        color: black;
       }
-      .dater a{
+      .dater a {
         text-decoration: none;
         text-transform: capitalize;
       }
-      .dater a:hover{
-          font-weight: bold;
+      .dater a:hover {
+        font-weight: bold;
       }
       .more {
-          background: #eee;
-          padding: 3rem;
+        background: #eee;
+        padding: 3rem;
       }
 
       .more .box-container {
-          display: -ms-grid;
-          display: grid;
-          -ms-grid-columns: minmax(20rem, 1fr)[auto-fit];
-          grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-          gap: 1.5rem;
-          padding: 2rem 0;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: minmax(20rem, 1fr) [auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 1.5rem;
+        padding: 2rem 0;
       }
       .more .box-container .box {
-          border: 0.2rem solid #10221b;
-          border-radius: .5rem;
-          background: #fff;
-          padding: 1rem;
+        border: 0.2rem solid #10221b;
+        border-radius: 0.5rem;
+        background: #fff;
+        padding: 1rem;
       }
       .more .box-container .box:hover {
-          background: #222;
+        background: #222;
       }
       .more .box-container .box:hover h3 {
-          color: #fff;
+        color: #fff;
       }
-      .more .box-container .box:hover p{
-          color: #fff;
+      .more .box-container .box:hover p {
+        color: #fff;
       }
       .more .box-container .box img {
-          height: 15rem;
-          width: 100%;
-          margin-bottom: 1rem;
-          -o-object-fit: cover;
-          object-fit: cover;
+        height: 15rem;
+        width: 100%;
+        margin-bottom: 1rem;
+        -o-object-fit: cover;
+        object-fit: cover;
       }
       .more .box-container .box h3 {
-          font-size: 1.2rem;
-          color: #111;
+        font-size: 1.2rem;
+        color: #111;
       }
       .more .box-container .box p {
-          font-size: 1rem;
-          padding: 1rem 0;
+        font-size: 1rem;
+        padding: 1rem 0;
       }
-      .more .box-container .box:hover .readmore{
+      .more .box-container .box:hover .readmore {
         color: #fff;
       }
-      .more .box-container .box .dater{
+      .more .box-container .box .dater {
         padding-left: 0;
       }
-      .more .box-container .box:hover .dater a{
+      .more .box-container .box:hover .dater a {
         color: #fff;
       }
-      .daily{
-          padding: 3rem;
+      .daily {
+        padding: 3rem;
       }
       .daily .slide {
-          text-align: center;
-          padding-top: 2rem;
+        text-align: center;
+        padding-top: 2rem;
       }
-      .newscontent{
-          text-align: left;
+      .newscontent {
+        text-align: left;
       }
       .daily .slide img {
-          height: 20rem;
-          width: 100%;
-          -o-object-fit: cover;
-          object-fit: cover;
-          border-radius: .5rem;
-        }
+        height: 20rem;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 0.5rem;
+      }
       .daily .slide .icons {
-          background: #ce166c;
-          border-radius: .5rem;
-          padding: 1rem;
-          position: relative;
-          top: -2rem;
-          display: inline-block;
-        }
+        background: #ce166c;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        position: relative;
+        top: -2rem;
+        display: inline-block;
+      }
       .daily .slide .icons a {
-          font-size: 1rem;
-          color: #fff;
-          margin: 0 1rem;
-          text-decoration: none;
-          text-transform: capitalize;
-        }
+        font-size: 1rem;
+        color: #fff;
+        margin: 0 1rem;
+        text-decoration: none;
+        text-transform: capitalize;
+      }
       .daily .slide .icons a:hover {
-          color: #111;
-          font-weight: bold;
-        }
+        color: #111;
+        font-weight: bold;
+      }
       .daily .slide .icons a i {
-          padding-right: .5rem;
-        }
+        padding-right: 0.5rem;
+      }
       .daily .slide h3 {
-          font-size: 1.2rem;
-          color: #10221b;
-        }
+        font-size: 1.2rem;
+        color: #10221b;
+      }
       .daily .slide p {
-          font-size: 1rem;
-          padding: 1rem 0;
-          line-height: 2;
-          color: #10221b;
+        font-size: 1rem;
+        padding: 1rem 0;
+        line-height: 2;
+        color: #10221b;
+      }
+      .reporter {
+        padding: 3rem;
+        background: #eee;
+      }
+      .reporter .box-container {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: minmax(15rem, 1fr) [auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 1.5rem;
+        padding: 1rem;
+        padding-top: 2rem;
+        text-align: center;
+      }
+      .reporter .box-container .box {
+        padding: 1rem;
+        border: 0.3rem double black;
+      }
+      .reporter .box-container .box img {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+      .reporter .box-container .box h3 {
+        font-size: 1.2rem;
+      }
+      .reporter .box-container .box p {
+        font-size: 1rem;
+        color: #10221b;
+        padding: 1rem 0;
+      }
+      @media screen and (max-width: 500px) {
+        .more .box-container {
+          display: block;
+          padding: 2rem 0;
         }
-        .reporter{
-            padding: 3rem;
-            background: #eee;
+        .more .box-container .box {
+          margin: 2rem 0;
         }
         .reporter .box-container {
-            display: -ms-grid;
-            display: grid;
-            -ms-grid-columns: minmax(15rem, 1fr)[auto-fit];
-            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-            gap: 1.5rem;
-            padding: 1rem;
-            padding-top: 2rem;
-            text-align: center;
+          display: block;
+          padding: 2rem 0;
         }
         .reporter .box-container .box {
-            padding: 1rem;
-            border: .3rem double; black;
+          margin: 1rem;
         }
-        .reporter .box-container .box img {
-            height: 10rem;
-            width: 10rem;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-        }
-        .reporter .box-container .box h3 {
-            font-size: 1.2rem;
-        }
-        .reporter .box-container .box p {
-            font-size: 1rem;
-            color: #10221b;
-            padding: 1rem 0;
-        }
-        @media screen and (max-width: 500px) {
-          .more .box-container{
-            display: block;
-            padding: 2rem 0;
-          }
-          .more .box-container .box{
-            margin: 2rem 0;
-          }
-          .reporter .box-container{
-            display: block;
-            padding: 2rem 0;
-          }
-          .reporter .box-container .box{
-            margin: 1rem;
-          }
-        }
+      }
     </style>
   </head>
   <body>
@@ -277,16 +278,18 @@
 
         <nav class="navbar sticky-top navbar-light py-3">
           <div class="container main-nav">
-            <a href="./index.html" class="navbar-brand logo">
-              <img src="./img/logo.png" alt="" />
+            <a href="../index.html" class="navbar-brand logo">
+              <img src="../img/logo.png" alt="" />
             </a>
 
             <ul class="navbar-nav middle-nav">
               <li class="nav-item px-3">
-                <a href="index.html" class="nav-link text-dark">HOME</a>
+                <a href="../index.html" class="nav-link text-dark">HOME</a>
               </li>
               <li class="nav-item px-3">
-                <a href="" class="nav-link text-dark">BUSINESS</a>
+                <a href="./html/business.html" class="nav-link text-dark"
+                  >BUSINESS</a
+                >
               </li>
               <li class="nav-item px-3">
                 <a href="" class="nav-link text-dark">FASHION</a>
@@ -295,11 +298,11 @@
                 <a href="" class="nav-link text-dark">LIFESTYLE</a>
               </li>
               <li class="nav-item px-3">
-                <a href="travel.html" class="nav-link text-dark">TRAVEL</a>
+                <a href="./travel.html" class="nav-link text-dark">TRAVEL</a>
               </li>
             </ul>
 
-            <ul class="navbar-nav">
+            <ul class="navbar-nav social-nav">
               <li class="nav-item px-2">
                 <a href="" class="nav-link"
                   ><i class="fab fa-facebook-f"></i
