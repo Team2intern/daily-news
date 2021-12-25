@@ -13,7 +13,7 @@
 2. Min Htet Aung
 3. Swan Pyae Sone
 4. Aye Yadar Tun
-5. Si Thu Bo San
+5. Si Thu Bo Sann
 6. Chan Myae Zaw
 7. Win Su Hling
 8. Chit Sann
